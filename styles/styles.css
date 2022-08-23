@@ -93,6 +93,11 @@ body {
     font-family: Roboto-Medium;
 }
 
+.lista-menu ul li a:hover {
+    background-color: rgba(61, 61, 61, 0.966);
+    color: rgba(255, 200, 21, 0.74);
+}
+
 /* LISTADO MENU PIE PAGINA*/
 
 .menu-pie-pagina {
