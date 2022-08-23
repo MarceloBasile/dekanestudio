@@ -1,0 +1,439 @@
+/*-------------------------------------- INICIO DISEÑO MEDIA MOBILE --------------------------------------*/
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+/*---------------------------- INICIO GLOBAL / INDEX ----------------------------*/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(61, 61, 61, 0.966);
+    font-family: Roboto-Medium;
+}
+
+.grid {
+    display: grid;
+}
+
+.main-body {
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 100px auto 10%;
+    grid-template-columns: auto;
+}
+
+/* HEADER */
+
+.cabecera {
+    grid-area: header;
+    background-color: rgb(70, 165, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 05px solid rgb(44, 105, 32);
+    font-family: Roboto-Medium;
+}
+
+.cabecera span {
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: 250;
+}
+
+.cabecera img {
+    border-radius: 100%;
+}
+
+/* BODY INDEX */
+
+.fondoPrincipal {
+    grid-area: main;
+    background-image: url("../images/fondoppal.webp");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(61, 61, 61, 0.966);
+}
+
+/* LISTADO MENU */
+
+.lista-menu {
+    display: none;
+    grid-area: nav;
+    border: 05px solid rgba(61, 61, 61, 0.966);
+    background-color: rgba(61, 61, 61, 0.966);
+}
+
+.lista-menu ul {
+    list-style-type: none;
+    margin-top: 125px;
+}
+
+.lista-menu ul li {
+    margin: 00px 00px 75px 00px;
+    text-align: center;
+}
+
+.lista-menu ul li a {
+    text-decoration: none;
+    color: rgba(161, 150, 150, 0.705);
+    background-color: rgb(40, 105, 32);
+    border: 05px solid rgb(70, 165, 51);
+    padding: 05px;
+    border-radius: 05px;
+    font-family: Roboto-Medium;
+}
+
+/* LISTADO MENU PIE PAGINA*/
+
+.menu-pie-pagina {
+    grid-area: footer;
+    border: 05px solid rgba(61, 61, 61, 0.966);
+    background-color: rgba(61, 61, 61, 0.966);
+}
+
+.menu-pie-pagina ul {
+    text-align: center;
+    padding: 18px;
+}
+
+.menu-pie-pagina ul li {
+    display: inline-block;
+}
+
+.menu-pie-pagina ul li a{
+    color: rgba(255, 200, 21, 0.74);
+    text-decoration: none;
+    font-family: Roboto-Medium;
+}
+
+/* BODY */
+
+.main-main {
+    grid-area: main;
+    background-color: rgba(61, 61, 61, 0.966);
+    font-family: Roboto-Medium;
+}
+
+/*---------------------------- FIN GLOBAL / INDEX ----------------------------*/
+
+
+/*---------------------------- INICIO NOSOTROS ----------------------------*/
+
+.main-nosotros{
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+/*---------------------------- FIN NOSOTROS ----------------------------*/
+
+
+/*---------------------------- INICIO SERVICIOS ----------------------------*/
+
+/* GRID SERVICIOS */
+
+.main-servicios {
+    grid-template-areas:
+    "tituloservicios"
+    "servicios";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% auto;
+}
+
+/* TITULO SERVICIOS */
+
+#titulo-servicios {
+    grid-area: tituloservicios;
+    justify-self: center;
+    align-self: center;
+}
+
+/* LISTA DE SERVICIOS */
+
+.list-servicios{
+    grid-area: servicios;
+    background-color: rgba(61, 61, 61, 0.966);
+    place-self: center;
+
+}
+
+.list-servicios ul {
+    border: 05px solid rgb(44, 105, 32);
+    border-style: double;
+    width: 500px;
+    padding: 20px;
+    list-style-type: square;
+
+}
+
+.list-servicios ul li {
+    font-size: larger;
+    margin: 10px;
+    text-align: center;
+}
+
+/*---------------------------- FIN SERVICIOS ----------------------------*/
+
+
+/*---------------------------- INICIO PROYETOS ----------------------------*/
+
+/* GRID PROYECTO */
+
+.main-proyectos {
+    grid-template-areas:
+    "titulopr"
+    "sangabriel" 
+    "monet"
+    "sanandres"
+    "santamaria";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(4, 20%);
+    row-gap: 50px;
+}
+
+.main-proyectos article {
+    place-self: center;
+}
+
+.main-proyectos article h3 {
+    text-align: center;
+}
+
+.main-proyectos article img {
+    height: 100%;
+    width: 100%;
+}
+
+/* TITULO PROYECTO */
+
+#titulo-proyectos {
+    grid-area: titulopr;
+    justify-self: center;
+    align-self: center;
+}
+
+/* PROYECTOS VARIOS */
+
+#san-gabriel {
+    grid-area: sangabriel;
+}
+
+#monet {
+    grid-area: monet;
+}
+
+#san-andres {
+    grid-area: sanandres;
+}
+
+#santa-maria {
+    grid-area: santamaria;
+}
+
+
+/*---------------------------- FIN PROYETOS ----------------------------*/
+
+
+/*---------------------------- INICIO CONTACTO ----------------------------*/
+
+/* GRID CONTACTO */
+
+.main-contacto {
+    grid-template-areas:
+    "titulo"
+    "form"
+    "mapa";
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1fr 1fr;
+    column-gap: 10px;
+}
+
+/* TITULO */
+
+#titulo-contacto {
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+}
+
+/* FORMULARIO */
+
+.form-container {
+    grid-area: form;
+    background-color: rgba(61, 61, 61, 0.966);
+    padding: 05px;
+    border: 05px solid;
+    border-style: double;
+    height: 425px;
+    justify-self: center;
+}
+
+.formulario-contacto input {
+    margin: 05px;
+    border-radius: 06px;
+    height: 35px;
+    width: 500px;
+}
+
+.formulario-contacto textarea {
+    margin: 05px;
+    max-width: 500px;
+    font-family: Roboto-Medium;
+}
+
+#enviar {
+    background-color: rgb(70, 165, 51);
+    color:rgba(255, 255, 255, 0.877);
+    width: 500px;
+}
+
+/* MAPA */
+
+#section-mapa {
+    grid-area: mapa;
+    align-self: center;
+    justify-self: center;
+}
+
+/* PIE MAPA */
+
+#pie-mapa {
+    color: rgb(197, 175, 174);
+    text-align: center;
+}
+
+/*---------------------------- FIN CONTACTO ----------------------------*/
+
+/*-------------------------------------- FIN DISEÑO MEDIA MOBILE --------------------------------------*/
+
+
+/*-------------------------------------- INICIO DISEÑO MEDIA TABLET --------------------------------------*/
+
+/* GLOBAL / INDEX */
+
+@media screen and (min-width: 600px) {
+    .lista-menu {
+        display: none;
+    }
+
+    .main-body {
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 100px auto 10%;
+        grid-template-columns: auto;
+    }
+
+    /* NOSOTROS */
+
+
+    /* SERVICIOS */
+
+    .main-servicios {
+        grid-template-areas:
+        "tituloservicios"
+        "servicios";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% auto;
+    }
+
+    /* PROYECTOS */
+
+    .main-proyectos {
+        grid-template-areas:
+        "titulopr titulopr"
+        "sangabriel monet"
+        "sanandres santamaria";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+    }
+
+    /* CONTACTO */
+
+    .main-contacto {
+        grid-template-areas:
+        "titulo titulo"
+        "form mapa";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 10% auto;
+    }
+
+
+}
+
+/*-------------------------------------- FIN DISEÑO MEDIA TABLET --------------------------------------*/
+
+
+/*-------------------------------------- INICIO DISEÑO MEDIA DESKTOP --------------------------------------*/
+
+/* GLOBAL / INDEX */
+
+@media screen and (min-width: 1200px) {
+    .lista-menu {
+        display: initial;
+    }
+
+    .main-body {
+        grid-template-areas:
+        "nav header"
+        "nav main"
+        "nav footer";
+        grid-template-rows: 100px auto 10%;
+        grid-template-columns: 15% auto;
+    }
+
+    /* NOSOTROS */
+
+
+    /* SERVICIOS */
+
+    .main-servicios {
+        grid-template-areas:
+        "tituloservicios"
+        "servicios";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% auto;
+    }
+
+    /* PROYECTOS */
+
+    .main-proyectos {
+        grid-template-areas:
+        "titulopr titulopr"
+        "sangabriel monet"
+        "sanandres santamaria";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+    }
+
+    /* CONTACTO */
+
+    .main-contacto {
+        grid-template-areas:
+        "titulo titulo"
+        "form mapa";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 10% auto;
+    }
+
+    #section-mapa {
+        justify-self: left;
+    }
+}
+
+/*-------------------------------------- FIN DISEÑO MEDIA DESKTOP --------------------------------------*/
