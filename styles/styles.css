@@ -36,7 +36,7 @@ body {
 
 .cabecera {
     grid-area: header;
-    background-color: rgb(70, 165, 51);
+    background-image: linear-gradient(to left, rgb(70, 165, 51), rgb(50, 60, 50));
     display: flex;
     justify-content: center;
     align-items: center;
