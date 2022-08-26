@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dekan estudio</title>
-        <link rel="shortcut icon" href="../images/favicon.jpg">
-        <link rel="stylesheet" href="../styles/styles.css">
-        <link rel="stylesheet" href="../styles/reset.css">
-    </head>
 
-    <body class="main-body grid">
-        <header class="cabecera">
-            <h1>DE<span>KAN</span> ESTUDIO</h1> <!--titulo de pagina-->
-            <img src="../images/favicon.jpg" alt="icono">
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- LINK DE MI CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <title>Dekan estudio</title>
+    <link rel="shortcut icon" href="../images/favicon.jpg">
+</head>
 
-        <!-- Lista menu -->
-        <nav class="lista-menu">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+<body class="container-fluid">
 
-        <main class="main-main main-servicios grid">
-            <h1 id="titulo-servicios">    
-                Nuestros Servicios
-            </h1>
-            <article class="list-servicios">
-                <ul>
-                    <li>Diseño a medida de tu futura casa</li>
-                    <li>Renderizado y modelado</li>
-                    <li>Construccion tradicional, steel frame, de madera</li>
-                    <li>Construccion de piscinas</li>
-                    <li>Asesoramiento en refrigeracion y calefaccion</li>
-                    <li>Asesoramiento para el equipamiento de tu casa</li>
-                </ul>
-            </article>
-        </main>
-
-        <footer>
-            <!-- Lista pie de pagina -->
-            <nav class="menu-pie-pagina">
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
+    <div class="row lista-menu">
+        <section class="col-1">
+            <nav class ="navbar colornav">
+                <ul class ="nav navbar-nav">
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="../index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a href="./nosotros.html">Nosotros</a>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="./nosotros.html">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="./servicios.html">Servicios</a>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="./servicios.html">Servicios</a>
                     </li>
-                    <li>
-                        <a href="./proyectos.html">Proyectos</a>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="./proyectos.html">Proyectos</a>
                     </li>
-                    <li>
-                        <a href="./contacto.html">Contacto</a>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
-        </footer>
-    </body>
+        </section>
+
+        <div class="col-11 container-fluid">
+
+            <header class="row cabecera">
+                <h1>DE<span>KAN</span> ESTUDIO</h1> <!--titulo de pagina-->
+                <img src="../images/favicon.jpg" alt="icono">
+            </header>
+
+            <main class="row lista-servicios">
+                <ul class="list-group">
+                    <li class="list-group-item">Diseño a medida de tu futura casa</li>
+                    <li class="list-group-item">Renderizado y modelado</li>
+                    <li class="list-group-item">Construccion tradicional, steel frame, de madera</li>
+                    <li class="list-group-item">Construccion de piscinas</li>
+                    <li class="list-group-item">Asesoramiento en refrigeracion y calefaccion</li>
+                    <li class="list-group-item">Asesoramiento para el equipamiento de tu casa</li>
+
+                  </ul>
+
+                  
+            </main>
+
+            <footer class="row">
+                <nav class="menu-pie-pagina">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
+</body>
 </html>
