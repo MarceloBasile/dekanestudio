@@ -108,10 +108,54 @@ p {
 
 /* BODY SERVICIOS */
 
-.lista-servicios {
-    display: flex;
+.titulo-servicios {
+    height: 100px;
     align-content: center;
+}
+
+.body-servicios {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 250px;
 }
 
 /*-------------------------------------- FIN SERVICIOS --------------------------------------*/
 
+
+/*-------------------------------------- INICIO PROYECTOS --------------------------------------*/
+
+/* BODY PROYECTOS */
+
+.titulo-proyectos {
+    justify-content: center;
+    align-content: center;
+}
+
+/*-------------------------------------- FIN PROYECTOS --------------------------------------*/
+
+
+/*-------------------------------------- INICIO CONTACTO --------------------------------------*/
+
+/* BODY CONTACTO */
+
+.titulo-contacto {
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.formulario-contacto {
+    width: 500px;
+}
+
+.contacto-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto-main article {
+    align-self: center;
+}
+
+
+/*-------------------------------------- FIN CONTACTO --------------------------------------*/
