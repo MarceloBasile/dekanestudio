@@ -104,16 +104,18 @@ body {
     grid-area: footer;
     border: 05px solid rgba(61, 61, 61, 0.966);
     background-color: rgba(61, 61, 61, 0.966);
+    height: 100%;
 }
 
 .menu-pie-pagina ul {
     text-align: center;
-    padding: 18px;
+    padding-top: 25px;
+
 }
 
-.menu-pie-pagina ul li {
+.menu-pie-pagina ul li{
     display: inline-block;
-}
+} 
 
 .menu-pie-pagina ul li a{
     color: rgba(255, 200, 21, 0.74);
@@ -121,13 +123,14 @@ body {
     font-family: Roboto-Medium;
 }
 
+
 /* BODY */
 
 .main-main {
     grid-area: main;
-    background-color: rgba(61, 61, 61, 0.966);
     font-family: Roboto-Medium;
 }
+
 
 /*---------------------------- FIN GLOBAL / INDEX ----------------------------*/
 
@@ -283,7 +286,7 @@ p {
     padding: 05px;
     border: 05px solid;
     border-style: double;
-    height: 425px;
+    height: 400px;
     justify-self: center;
 }
 
