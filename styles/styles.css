@@ -64,6 +64,13 @@ body {
     background-color: rgba(61, 61, 61, 0.966);
 }
 
+/* BODY GLOBAL*/
+
+.main-main {
+    grid-area: main;
+    font-family: Roboto-Medium;
+}
+
 /* LISTADO MENU */
 
 .lista-menu {
@@ -120,14 +127,6 @@ body {
 .menu-pie-pagina ul li a{
     color: rgba(255, 200, 21, 0.74);
     text-decoration: none;
-    font-family: Roboto-Medium;
-}
-
-
-/* BODY */
-
-.main-main {
-    grid-area: main;
     font-family: Roboto-Medium;
 }
 
