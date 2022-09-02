@@ -1,0 +1,20 @@
+// LISTADO MENU PIE PAGINA
+
+.menu-pie-pagina {
+    grid-area: footer;
+    border: 05px solid rgba(61, 61, 61, 0.966);
+    background-color: $bg-footer-color;
+    height: 100%;
+    ul {
+        text-align: center;
+        padding-top: 25px;
+        li {
+            display: inline-block;
+            a {
+                color: $wd-footwe-botones-color;
+                text-decoration: none;
+                font-family: Roboto-Medium;
+            }
+        }
+    }
+}

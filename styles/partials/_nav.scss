@@ -1,0 +1,37 @@
+// LISTADO MENU BARRA  
+
+.lista-menu {
+    display: none;
+    grid-area: nav;
+    border: 05px solid rgba(61, 61, 61, 0.966);
+    background-color: $bg-navbar-color;
+    ul {
+        list-style-type: none;
+        margin-top: 125px;
+        li {
+            margin: 00px 00px 75px 00px;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $wd-navbar-botones-color;
+                background-color: $bg-navbar-botones-color;
+                border: 05px solid rgb(70, 165, 51);
+                padding: 05px;
+                border-radius: 05px;
+                font-family: Roboto-Medium;
+                transition: all 1s ease;
+                &:hover {
+                    background-color: $bg-navbar-hover-color;
+                    color: $wd-navbar-hover-color;
+                }
+            }
+        }
+    }
+}
+
+// DISEÑO MEDIA DESKTOP
+@media screen and (min-width: 1200px) {
+    .lista-menu {
+        display: initial;
+    }
+}

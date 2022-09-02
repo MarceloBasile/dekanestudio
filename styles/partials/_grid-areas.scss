@@ -1,0 +1,129 @@
+/* MAIN CLASE GLOBAL*/
+
+.main-main {
+    grid-area: main;
+    font-family: Roboto-Medium;
+}
+
+// GRID NOSOTROS
+
+.main-nosotros{
+    display: flex;
+    align-items: center;
+}
+
+
+// GRID SERVICIOS
+
+.main-servicios {
+    grid-template-areas:
+    "tituloservicios"
+    "servicios";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% auto;
+}
+
+// DISEÑO MEDIA TABLET
+@media screen and (min-width: 600px) {
+    .main-servicios {
+        grid-template-areas:
+        "tituloservicios"
+        "servicios";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% auto;
+    }
+}
+
+// DISEÑO MEDIA DESKTOP
+@media screen and (min-width: 1200px) {
+    .main-servicios {
+        grid-template-areas:
+        "tituloservicios"
+        "servicios";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% auto;
+    }
+}
+
+// GRID PROYECTO
+
+.main-proyectos {
+    grid-template-areas:
+    "titulopr"
+    "sangabriel" 
+    "monet"
+    "sanandres"
+    "santamaria";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(4, 20%);
+    row-gap: 50px;
+    article {
+        place-self: center;
+    }
+    article h3 {
+        text-align: center;
+    }
+    article img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// DISEÑO MEDIA TABLET
+@media screen and (min-width: 600px) {
+    .main-proyectos {
+        grid-template-areas:
+        "titulopr titulopr"
+        "sangabriel monet"
+        "sanandres santamaria";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+    }
+}
+
+// DISEÑO MEDIA DESKTOP
+@media screen and (min-width: 1200px) {
+    .main-proyectos {
+        grid-template-areas:
+        "titulopr titulopr"
+        "sangabriel monet"
+        "sanandres santamaria";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+    }
+}
+
+
+// GRID CONTACTO
+
+.main-contacto {
+    grid-template-areas:
+    "titulo"
+    "form"
+    "mapa";
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1fr 1fr;
+    column-gap: 10px;
+}
+
+// DISEÑO MEDIA TABLET
+@media screen and (min-width: 600px) {
+    .main-contacto {
+        grid-template-areas:
+        "titulo titulo"
+        "form mapa";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 10% auto;
+    }
+}
+
+// DISEÑO MEDIA DESKTOP
+@media screen and (min-width: 1200px) {
+    .main-contacto {
+        grid-template-areas:
+        "titulo titulo"
+        "form mapa";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 10% auto;
+    }
+}

@@ -1,0 +1,110 @@
+// BODY INDEX //
+
+.fondo-principal {
+    grid-area: main;
+    background-image: url("../images/fondoppal.webp");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+// BODY NOSOTROS //
+
+p {
+    text-align: center;
+}
+
+
+// BODY SERVICIOS //
+
+/* TITULO SERVICIOS */
+
+#titulo-servicios {
+    grid-area: tituloservicios;
+    justify-self: center;
+    align-self: center;
+}
+
+// LISTA DE SERVICIOS
+
+.list-servicios {
+    grid-area: servicios;
+    background-color: $bg-list-servicios-color;
+    place-self: center;
+    ul {
+        border: 5px solid rgb(44, 105, 32);
+        border-style: double;
+        width: 500px;
+        padding: 20px;
+        list-style-type: square;
+    }
+    li {
+        font-size: larger;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+
+// BODY PROYECTO //
+
+/* TITULO PROYECTO */
+
+#titulo-proyectos {
+    grid-area: titulopr;
+    justify-self: center;
+    align-self: center;
+}
+
+/* PROYECTOS VARIOS */
+
+#san-gabriel {
+    grid-area: sangabriel;
+}
+
+#monet {
+    grid-area: monet;
+}
+
+#san-andres {
+    grid-area: sanandres;
+}
+
+#santa-maria {
+    grid-area: santamaria;
+}
+
+
+// BODY CONTACTO //
+
+/* TITULO */
+
+#titulo-contacto {
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+}
+
+/* MAPA */
+
+#section-mapa {
+    grid-area: mapa;
+    align-self: center;
+    justify-self: center;
+}
+
+// DISEÑO MEDIA DESKTOP
+@media screen and (min-width: 1200px) {
+      #section-mapa {
+        justify-self: left;
+    }
+}
+
+/* PIE MAPA */
+
+#pie-mapa {
+    color: $wd-pie-mapa-color;
+    text-align: center;
+}
+
