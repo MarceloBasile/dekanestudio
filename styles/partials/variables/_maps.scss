@@ -1,0 +1,16 @@
+// MAPA NAVBAR
+
+$colors: (
+    bg-navbar-color:  rgba(61, 61, 61, 0.966),
+    bg-navbar-botones-color: rgb(40, 105, 32),
+    bg-navbar-hover-color:  rgba(61, 61, 61, 0.966),
+    txt-navbar-botones-color: rgba(161, 150, 150, 0.705),
+    txt-navbar-hover-color: rgba(255, 200, 21, 0.74),
+    br-navbar-color: rgba(61, 61, 61, 0.966),
+    br-navbar-botones-color: rgb(70, 165, 51),
+);
+
+$borders: (
+    br-navbar: 05px solid map-get($colors, br-navbar-color),
+    br-navbar-botones: 05px solid map-get($colors, br-navbar-botones-color),
+);

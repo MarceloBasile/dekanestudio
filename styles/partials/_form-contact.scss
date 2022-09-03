@@ -4,8 +4,7 @@
     grid-area: form;
     background-color: $bg-form-contact-color;
     padding: 05px;
-    border: 05px solid;
-    border-style: double;
+    border: $br-form-contact;
     height: 400px;
     justify-self: center;
 }
@@ -13,7 +12,7 @@
 .formulario-contacto {
     input {
         margin: 05px;
-        border-radius: 06px;
+        border-radius: $br-form-contact-radius;
         height: 35px;
         width: 500px;
     }
@@ -21,12 +20,13 @@
         margin: 05px;
         max-width: 500px;
         font-family: Roboto-Medium;
+        border-radius: $br-form-contact-radius;
     }
 }
 
 #enviar {
     background-color: $bg-enviar-color;
-    color:$wd-enviar-color;
+    color:$txt-enviar-color;
     width: 500px;
 }
 

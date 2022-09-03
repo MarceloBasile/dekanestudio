@@ -3,8 +3,8 @@
 .lista-menu {
     display: none;
     grid-area: nav;
-    border: 05px solid rgba(61, 61, 61, 0.966);
-    background-color: $bg-navbar-color;
+    border: map-get($borders, br-navbar);
+    background-color: map-get($colors, bg-navbar-color);
     ul {
         list-style-type: none;
         margin-top: 125px;
@@ -13,16 +13,16 @@
             text-align: center;
             a {
                 text-decoration: none;
-                color: $wd-navbar-botones-color;
-                background-color: $bg-navbar-botones-color;
-                border: 05px solid rgb(70, 165, 51);
+                color: map-get($colors, txt-navbar-botones-color);
+                background-color: map-get($colors, bg-navbar-botones-color);
+                border: map-get($borders, br-navbar-botones);
                 padding: 05px;
                 border-radius: 05px;
                 font-family: Roboto-Medium;
                 transition: all 1s ease;
                 &:hover {
-                    background-color: $bg-navbar-hover-color;
-                    color: $wd-navbar-hover-color;
+                    background-color: map-get($colors, bg-navbar-hover-color);
+                    color: map-get($colors, txt-navbar-hover-color);
                 }
             }
         }

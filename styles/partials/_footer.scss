@@ -2,7 +2,7 @@
 
 .menu-pie-pagina {
     grid-area: footer;
-    border: 05px solid rgba(61, 61, 61, 0.966);
+    border: $br-footer;
     background-color: $bg-footer-color;
     height: 100%;
     ul {
@@ -11,7 +11,7 @@
         li {
             display: inline-block;
             a {
-                color: $wd-footwe-botones-color;
+                color: $txt-footer-botones-color;
                 text-decoration: none;
                 font-family: Roboto-Medium;
             }

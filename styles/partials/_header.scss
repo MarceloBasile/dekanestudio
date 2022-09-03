@@ -6,10 +6,10 @@
     background-image: linear-gradient($bg-header-color);
     justify-content: center;
     align-items: center;
-    border: 05px solid rgb(44, 105, 32);
+    border: $br-header;
     font-family: Roboto-Medium;
     span {
-        color: $wd-header-span-color;
+        color: $txt-header-span-color;
         font-weight: 250;
     }
      img {

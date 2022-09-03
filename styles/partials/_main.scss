@@ -33,8 +33,7 @@ p {
     background-color: $bg-list-servicios-color;
     place-self: center;
     ul {
-        border: 5px solid rgb(44, 105, 32);
-        border-style: double;
+        border: $br-list-servicios;
         width: 500px;
         padding: 20px;
         list-style-type: square;
@@ -104,7 +103,7 @@ p {
 /* PIE MAPA */
 
 #pie-mapa {
-    color: $wd-pie-mapa-color;
+    color: $txt-pie-mapa-color;
     text-align: center;
 }
 
