@@ -18,6 +18,7 @@ body {
 // GLOBAL //
 
 .grid {
+    @extend %displayflex;
     display: grid;
 }
 
