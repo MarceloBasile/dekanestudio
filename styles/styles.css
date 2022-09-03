@@ -313,7 +313,7 @@ p {
 @media screen and (min-width: 1200px) {
   .main-contacto {
     grid-template-areas: "titulo titulo" "form mapa";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 10% auto;
     row-gap: 0px;
   }

@@ -113,6 +113,6 @@
         grid-template-areas:
         "titulo titulo"
         "form mapa";
-        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% auto);
+        @include grid-areas($template-columns: 2fr 1fr, $template-rows: 10% auto);
     }
 }
