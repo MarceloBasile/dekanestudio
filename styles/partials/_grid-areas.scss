@@ -8,7 +8,7 @@
 // GRID NOSOTROS
 
 .main-nosotros{
-    display: flex;
+    @extend %displayflex;
     align-items: center;
 }
 

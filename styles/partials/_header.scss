@@ -2,7 +2,7 @@
 
 .cabecera {
     grid-area: header;
-    display: flex;
+    @extend %displayflex;
     background-image: linear-gradient($bg-header-color);
     justify-content: center;
     align-items: center;
