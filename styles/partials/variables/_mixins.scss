@@ -1,0 +1,9 @@
+@mixin grid-areas($template-columns, $template-rows, $row-gap: false) {
+    grid-template-columns: $template-columns;
+    grid-template-rows: $template-rows;
+    @if $row-gap {
+        row-gap: 50px;
+    } @else {
+        row-gap: 00px;
+    }
+}

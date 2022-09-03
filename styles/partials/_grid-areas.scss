@@ -19,8 +19,7 @@
     grid-template-areas:
     "tituloservicios"
     "servicios";
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% auto;
+    @include grid-areas($template-columns: 1fr, $template-rows: 10% auto);
 }
 
 // DISEÑO MEDIA TABLET
@@ -29,8 +28,7 @@
         grid-template-areas:
         "tituloservicios"
         "servicios";
-        grid-template-columns: 1fr;
-        grid-template-rows: 10% auto;
+        @include grid-areas($template-columns: 1fr, $template-rows: 10% auto);
     }
 }
 
@@ -40,8 +38,7 @@
         grid-template-areas:
         "tituloservicios"
         "servicios";
-        grid-template-columns: 1fr;
-        grid-template-rows: 10% auto;
+        @include grid-areas($template-columns: 1fr, $template-rows: 10% auto);
     }
 }
 
@@ -54,9 +51,7 @@
     "monet"
     "sanandres"
     "santamaria";
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(4, 20%);
-    row-gap: 50px;
+    @include grid-areas($template-columns: 1fr, $template-rows: 100px repeat(4, 20%), $row-gap: true);
     article {
         place-self: center;
     }
@@ -76,8 +71,7 @@
         "titulopr titulopr"
         "sangabriel monet"
         "sanandres santamaria";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 1fr;
+        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% 1fr 1fr);
     }
 }
 
@@ -88,8 +82,7 @@
         "titulopr titulopr"
         "sangabriel monet"
         "sanandres santamaria";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 1fr;
+        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% 1fr 1fr);
     }
 }
 
@@ -101,9 +94,7 @@
     "titulo"
     "form"
     "mapa";
-    grid-template-columns: auto;
-    grid-template-rows: 100px 1fr 1fr;
-    column-gap: 10px;
+    @include grid-areas($template-columns: auto, $template-rows: 100px 1fr 1fr);
 }
 
 // DISEÑO MEDIA TABLET
@@ -112,8 +103,7 @@
         grid-template-areas:
         "titulo titulo"
         "form mapa";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 10% auto;
+        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% auto);
     }
 }
 
@@ -123,7 +113,6 @@
         grid-template-areas:
         "titulo titulo"
         "form mapa";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 10% auto;
+        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% auto);
     }
 }

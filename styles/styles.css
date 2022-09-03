@@ -243,6 +243,7 @@ p {
   grid-template-areas: "tituloservicios" "servicios";
   grid-template-columns: 1fr;
   grid-template-rows: 10% auto;
+  row-gap: 0px;
 }
 
 @media screen and (min-width: 600px) {
@@ -250,6 +251,7 @@ p {
     grid-template-areas: "tituloservicios" "servicios";
     grid-template-columns: 1fr;
     grid-template-rows: 10% auto;
+    row-gap: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -257,6 +259,7 @@ p {
     grid-template-areas: "tituloservicios" "servicios";
     grid-template-columns: 1fr;
     grid-template-rows: 10% auto;
+    row-gap: 0px;
   }
 }
 .main-proyectos {
@@ -281,6 +284,7 @@ p {
     grid-template-areas: "titulopr titulopr" "sangabriel monet" "sanandres santamaria";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 1fr 1fr;
+    row-gap: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -288,27 +292,29 @@ p {
     grid-template-areas: "titulopr titulopr" "sangabriel monet" "sanandres santamaria";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 1fr 1fr;
+    row-gap: 0px;
   }
 }
 .main-contacto {
   grid-template-areas: "titulo" "form" "mapa";
   grid-template-columns: auto;
   grid-template-rows: 100px 1fr 1fr;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  row-gap: 0px;
 }
 
 @media screen and (min-width: 600px) {
   .main-contacto {
     grid-template-areas: "titulo titulo" "form mapa";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% auto;
+    row-gap: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-contacto {
     grid-template-areas: "titulo titulo" "form mapa";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% auto;
+    row-gap: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */
