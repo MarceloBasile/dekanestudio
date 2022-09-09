@@ -65,7 +65,7 @@
         "titulopr titulopr"
         "sangabriel monet"
         "sanandres santamaria";
-        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% 1fr 1fr);
+        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% 1fr 1.5fr);
     }
 }
 

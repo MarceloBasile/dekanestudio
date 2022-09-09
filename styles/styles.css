@@ -193,7 +193,7 @@ p {
   grid-area: footer;
   border: 5px solid rgba(61, 61, 61, 0.966);
   background-color: rgba(61, 61, 61, 0.966);
-  height: 100%;
+  height: auto;
 }
 .menu-pie-pagina ul {
   text-align: center;
@@ -308,7 +308,7 @@ p {
   .main-proyectos {
     grid-template-areas: "titulopr titulopr" "sangabriel monet" "sanandres santamaria";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr;
+    grid-template-rows: 10% 1fr 1.5fr;
     row-gap: 0px;
   }
 }
