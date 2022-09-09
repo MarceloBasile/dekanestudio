@@ -26,7 +26,7 @@ p {
     align-self: center;
 }
 
-// LISTA DE SERVICIOS
+// LISTA DE SERVICIOS DISEÑO MOBILE
 
 .list-servicios {
     grid-area: servicios;
@@ -34,14 +34,28 @@ p {
     place-self: center;
     ul {
         border: $br-list-servicios;
-        width: 500px;
-        padding: 20px;
+        width: auto;
+        padding-left: 20px;
         list-style-type: square;
     }
     li {
         font-size: larger;
         margin: 10px;
-        text-align: center;
+        text-align: left;
+    }
+}
+
+// DISEÑO MEDIA TABLET/DESKTOP SERVICIOS
+@media screen and (min-width: 600px) {
+    .list-servicios {
+        place-self: center;
+        ul {
+            padding: 20px;
+        }
+        li {
+            font-size: larger;
+            margin: 10px;
+        }
     }
 }
 
