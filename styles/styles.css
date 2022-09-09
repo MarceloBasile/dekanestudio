@@ -183,11 +183,6 @@ p {
   justify-self: center;
 }
 
-@media screen and (min-width: 1200px) {
-  #section-mapa {
-    justify-self: left;
-  }
-}
 /* PIE MAPA */
 #pie-mapa {
   color: rgb(209, 179, 218);
@@ -218,6 +213,7 @@ p {
   background-color: rgba(61, 61, 61, 0.966);
   padding: 5px;
   border: 5px double;
+  width: auto;
   height: 400px;
   justify-self: center;
 }
@@ -226,11 +222,11 @@ p {
   margin: 5px;
   border-radius: 10px;
   height: 35px;
-  width: 500px;
+  width: 300px;
 }
 .formulario-contacto textarea {
   margin: 5px;
-  max-width: 500px;
+  max-width: 300px;
   font-family: Roboto-Medium;
   border-radius: 10px;
 }
@@ -238,9 +234,34 @@ p {
 #enviar {
   background-color: rgb(70, 165, 51);
   color: rgba(255, 255, 255, 0.877);
-  width: 500px;
+  width: 300px;
 }
 
+@media screen and (min-width: 600px) {
+  .form-container {
+    align-self: center;
+  }
+  .formulario-contacto input {
+    width: 400px;
+  }
+  .formulario-contacto textarea {
+    max-width: 400px;
+  }
+  #enviar {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formulario-contacto input {
+    width: 450px;
+  }
+  .formulario-contacto textarea {
+    max-width: 450px;
+  }
+  #enviar {
+    width: 450px;
+  }
+}
 /* MAIN CLASE GLOBAL*/
 .main-main {
   grid-area: main;
@@ -259,14 +280,6 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  .main-servicios {
-    grid-template-areas: "tituloservicios" "servicios";
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% auto;
-    row-gap: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .main-servicios {
     grid-template-areas: "tituloservicios" "servicios";
     grid-template-columns: 1fr;
@@ -299,14 +312,6 @@ p {
     row-gap: 0px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .main-proyectos {
-    grid-template-areas: "titulopr titulopr" "sangabriel monet" "sanandres santamaria";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr;
-    row-gap: 0px;
-  }
-}
 .main-contacto {
   grid-template-areas: "titulo" "form" "mapa";
   grid-template-columns: auto;
@@ -318,14 +323,6 @@ p {
   .main-contacto {
     grid-template-areas: "titulo titulo" "form mapa";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% auto;
-    row-gap: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-contacto {
-    grid-template-areas: "titulo titulo" "form mapa";
-    grid-template-columns: 2fr 1fr;
     grid-template-rows: 10% auto;
     row-gap: 0px;
   }

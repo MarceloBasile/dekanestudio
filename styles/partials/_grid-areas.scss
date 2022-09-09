@@ -13,7 +13,7 @@
 }
 
 
-// GRID SERVICIOS
+// GRID SERVICIOS DISEÑO MOBILE
 
 .main-servicios {
     grid-template-areas:
@@ -22,7 +22,7 @@
     @include grid-areas($template-columns: 1fr, $template-rows: 10% auto);
 }
 
-// DISEÑO MEDIA TABLET
+// DISEÑO MEDIA TABLET SERVICIOS
 @media screen and (min-width: 600px) {
     .main-servicios {
         grid-template-areas:
@@ -32,17 +32,11 @@
     }
 }
 
-// DISEÑO MEDIA DESKTOP
+// DISEÑO MEDIA DESKTOP SERVICIOS
 @media screen and (min-width: 1200px) {
-    .main-servicios {
-        grid-template-areas:
-        "tituloservicios"
-        "servicios";
-        @include grid-areas($template-columns: 1fr, $template-rows: 10% auto);
-    }
 }
 
-// GRID PROYECTO
+// GRID PROYECTOS DISEÑO MOBILE
 
 .main-proyectos {
     grid-template-areas:
@@ -64,7 +58,7 @@
     }
 }
 
-// DISEÑO MEDIA TABLET
+// DISEÑO MEDIA TABLET PROYECTOS
 @media screen and (min-width: 600px) {
     .main-proyectos {
         grid-template-areas:
@@ -75,19 +69,12 @@
     }
 }
 
-// DISEÑO MEDIA DESKTOP
+// DISEÑO MEDIA DESKTOP PROYECTOS
 @media screen and (min-width: 1200px) {
-    .main-proyectos {
-        grid-template-areas:
-        "titulopr titulopr"
-        "sangabriel monet"
-        "sanandres santamaria";
-        @include grid-areas($template-columns: 1fr 1fr, $template-rows: 10% 1fr 1fr);
-    }
 }
 
 
-// GRID CONTACTO
+// GRID CONTACTO DISEÑO MOBILE
 
 .main-contacto {
     grid-template-areas:
@@ -97,7 +84,7 @@
     @include grid-areas($template-columns: auto, $template-rows: 100px 1fr 1fr);
 }
 
-// DISEÑO MEDIA TABLET
+// DISEÑO MEDIA TABLET/DESKTOP CONTACTO
 @media screen and (min-width: 600px) {
     .main-contacto {
         grid-template-areas:
@@ -107,12 +94,6 @@
     }
 }
 
-// DISEÑO MEDIA DESKTOP
+// DISEÑO MEDIA DESKTOP CONTACTO
 @media screen and (min-width: 1200px) {
-    .main-contacto {
-        grid-template-areas:
-        "titulo titulo"
-        "form mapa";
-        @include grid-areas($template-columns: 2fr 1fr, $template-rows: 10% auto);
-    }
 }
