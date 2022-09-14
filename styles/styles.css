@@ -114,20 +114,16 @@ p {
   grid-area: tituloservicios;
   justify-self: center;
   align-self: center;
-}
-
-.list-servicios {
-  grid-area: servicios;
   background-color: rgba(61, 61, 61, 0.966);
   place-self: center;
 }
-.list-servicios ul {
+#titulo-servicios ul {
   border: 5px double rgb(44, 105, 32);
   width: auto;
   padding-left: 20px;
   list-style-type: square;
 }
-.list-servicios li {
+#titulo-servicios li {
   font-size: larger;
   margin: 10px;
   text-align: left;

@@ -24,12 +24,6 @@ p {
     grid-area: tituloservicios;
     justify-self: center;
     align-self: center;
-}
-
-// LISTA DE SERVICIOS DISEÑO MOBILE
-
-.list-servicios {
-    grid-area: servicios;
     background-color: $bg-list-servicios-color;
     place-self: center;
     ul {
